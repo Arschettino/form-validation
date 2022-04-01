@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Form Validation Test</title>
+</head>
+<body>
+    <div class="content">
+        <form  class="data-collection" novalidate>
+            <ul>
+                <li>
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" required>
+                </li>
+                <li>
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" name="zip" id="zip" pattern="\d{5,5}(-\d{4,4})?" required>
+                </li>
+                <li>
+                    <label for="pass1">Password:</label>
+                    <input type="password" name="pass1" id="pass1" required>
+                </li>
+                <li>
+                    <label for="pass2">Confirm Password:</label>
+                    <input type="password" name="pass2" id="pass2" required>
+                </li>
+            </ul>
+            <button type="submit" class="send">Submit</button>
+        </form>
+    </div>
+    <div class="message">
+        
+    </div>
+</body>
+</html>
